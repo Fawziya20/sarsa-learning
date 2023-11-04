@@ -2,22 +2,87 @@
 
 
 ## AIM
-Write the experiment AIM.
+To develop a Python program to find the optimal policy for the given RL environment using SARSA-Learning and compare the state values with the Monte Carlo method.
 
 ## PROBLEM STATEMENT
-Explain the problem statement.
+The bandit slippery walk problem is a reinforcement learning problem in which an agent must learn to navigate a 7-state environment in order to reach a goal state. The environment is slippery, so the agent has a chance of moving in the opposite direction of the action it takes.
 
 ## SARSA LEARNING ALGORITHM
-Include the steps involved in the SARSA Learning algorithm
+1)Initialize the Q-values arbitrarily for all state-action pairs.
+2)Repeat for each episode:
+     a)Initialize the starting state.
+     b)Repeat for each step of episode:
+      ->Choose action from state using policy derived from Q (e.g., epsilon-greedy).
+      ->Take action, observe reward and next state.
+      ->Choose action from next state using policy derived from Q (e.g., epsilon-greedy).
+      ->Update Q(s, a) := Q(s, a) + alpha * [R + gamma * Q(s', a') - Q(s, a)]
+      ->Update the state and action.
+    c)Until state is terminal.
+3)Until performance converges.
+
 
 ## SARSA LEARNING FUNCTION
-Include the SARSA Learning function
+```python
+def sarsa(env,
+          gamma=1.0,
+          init_alpha=0.5,
+          min_alpha=0.01,
+          alpha_decay_ratio=0.5,
+          init_epsilon=1.0,
+          min_epsilon=0.1,
+          epsilon_decay_ratio=0.9,
+          n_episodes=3000):
+    nS, nA = env.observation_space.n, env.action_space.n
+    pi_track = []
+    Q = np.zeros((nS, nA), dtype=np.float64)
+    Q_track = np.zeros((n_episodes, nS, nA), dtype=np.float64)
+
+    select_action = lambda state,Q,epsilon: 
+    			np.argmax(Q[state]) 
+    			if np.random.random() > epsilon 
+                else np.random.randint(len(Q[state]))
+
+    alphas = decay_schedule(init_alpha,min_alpha,alpha_decay_ratio,n_episodes)
+
+    epsilons = decay_schedule(init_epsilon,min_epsilon,epsilon_decay_ratio,n_episodes)
+
+    for e in tqdm(range(n_episodes),leave=False):
+        state, done = env.reset(), False
+        action = select_action(state,Q,epsilons[e])
+
+        while not done:
+            next_state,reward,done,_ = env.step(action)
+            next_action = select_action(next_state,Q,epsilons[e])
+
+            td_target = reward+gamma*Q[next_state][next_action]*(not done)
+
+            td_error = td_target - Q[state][action]
+
+            Q[state][action] = Q[state][action] + alphas[e] * td_error
+
+            state, action = next_state,next_action
+
+        Q_track[e] = Q
+        pi_track.append(np.argmax(Q,axis=1))
+
+    V = np.max(Q,axis=1)
+    pi = lambda s: {s:a for s,a in enumerate(np.argmax(Q,axis=1))}[s]
+
+    return Q, V, pi, Q_track, pi_track
+```
 
 ## OUTPUT:
-Mention the optimal policy, optimal value function , success rate for the optimal policy.
+![image](https://github.com/Fawziya20/sarsa-learning/assets/75235022/da87a9a0-4742-4472-99e8-8b07468fd9a2)
 
-Include plot comparing the state value functions of Monte Carlo method and SARSA learning.
+![image](https://github.com/Fawziya20/sarsa-learning/assets/75235022/7e854404-0cd2-4740-8e04-8c5a480b8f6f)
+
+![image](https://github.com/Fawziya20/sarsa-learning/assets/75235022/8a4d4de3-2611-4883-a97f-46e12bef3ca9)
+
+![image](https://github.com/Fawziya20/sarsa-learning/assets/75235022/838be182-8078-4949-b730-ccdcfb1e8e7b)
+
+![image](https://github.com/Fawziya20/sarsa-learning/assets/75235022/7d90a6a9-d49a-4147-9d81-d571ec134b27)
+
+
 
 ## RESULT:
-
-Write your result here
+Thus the optimal policy for the given RL environment is found using SARSA-Learning and the state values are compared with the Monte Carlo method.
