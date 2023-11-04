@@ -8,8 +8,8 @@ To develop a Python program to find the optimal policy for the given RL environm
 The bandit slippery walk problem is a reinforcement learning problem in which an agent must learn to navigate a 7-state environment in order to reach a goal state. The environment is slippery, so the agent has a chance of moving in the opposite direction of the action it takes.
 
 ## SARSA LEARNING ALGORITHM
-1)Initialize the Q-values arbitrarily for all state-action pairs.
-2)Repeat for each episode:
+1)Initialize the Q-values arbitrarily for all state-action pairs.\n
+2)Repeat for each episode:\n
      a)Initialize the starting state.
      b)Repeat for each step of episode:
       ->Choose action from state using policy derived from Q (e.g., epsilon-greedy).
