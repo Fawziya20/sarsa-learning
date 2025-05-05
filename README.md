@@ -6,7 +6,7 @@ To develop a Python program to find the optimal policy for the given RL environm
 Thexzvcik7iknjhjhjhbhjbm
 2)Repeat for each episode:<br>jjkkl
      a)Initialize the starting stmnmate.<br>>FKnaLKFNalkfb;LANL
-     b)Repeat for each step of episode:<brkjkhkjhkhiu
+     b)Repeat for each step of episode:<brkjkhkjhkhiunbjbnmb
       ->Choose action from state using policy derived from Q (e.g., epsilon-greedy).<br>jkyfku
       ->Take action, observe reward and next state.<br>
       ->Choose action from next state using policy derived from Q (e.g., epsilon-greedy).<br>
