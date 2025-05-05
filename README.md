@@ -8,7 +8,7 @@ The bandit slippery walk problem is a reinforcement learning problem in which an
 
 ## SARSA LEARNING ALGORITHM
 1)Initialize thefaegsargarsdasfas
-2)Repeat for each episode:<br>
+2)Repeat for each episode:<br>jjkkl
      a)Initialize the starting state.<br>
      b)Repeat for each step of episode:<br>
       ->Choose action from state using policy derived from Q (e.g., epsilon-greedy).<br>
