@@ -13,7 +13,7 @@ d      ->Update Q(s, a) := Q(s, a) + alpha * [R + gamma * Q(s', a') - Q(s, a)]<b
       ->Update the state and action.<br>
     c)Until state is terminal.<br>
 3)Until performance converges.<br>
-
+ADVADVADV
 
 ## SARSA LEARNING FUNCTION
 ```python
