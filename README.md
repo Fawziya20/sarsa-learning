@@ -9,8 +9,7 @@ Thexzvcik7iknjhjhjhbhjbm
      b)Repeat for each step of episode:<brkjkhkjhkhiunbjbndsfDfmb
       ->Choose action from state using policy derived from Q (e.g., epsilon-greedy).<br>jkyfku
       ->Take action, observe reward and next state.<br>
-      ->Choose action from next state using policy derived from Q (e.g.,feWFGWg epsilon-greedy).<br>
-      ->Update Q(s, a) := Q(s, a) + alpha * [R + gamma * Q(s', a') - Q(s, a)]<br>
+d      ->Update Q(s, a) := Q(s, a) + alpha * [R + gamma * Q(s', a') - Q(s, a)]<br>
       ->Update the state and action.<br>
     c)Until state is terminal.<br>
 3)Until performance converges.<br>
