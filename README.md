@@ -11,7 +11,7 @@ Thexzvcik7iknjhjhjhbhjbm
       ->Take action, observe reward and next state.<br>
 d      ->Update Q(s, a) := Q(s, a) + alpha * [R + gamma * Q(s', a') - Q(s, a)]<br>.JB KJNKJ
       ->Update the state and action.<br>
-    c)Until state is terminal.<br>
+    c)Until state is terminal.<br>.hkvkj. k.bhvb
 3)Until performance converges.<br>
 ADVADVADV
 
