@@ -10,7 +10,7 @@ Thexzvcik7iknjhjhjhbhjbm
 3)Until performance converges.<br>
 
 hyrhye5
-## SARSA LEARNING FUNCTIONfSV
+## SARSA LEARNING FUNCTIONfSVxxxxxxxxx
 ```pythonxx
 def sarsa(env,ss
           gamma=1.0,
