@@ -6,12 +6,7 @@ To develop a Python program to find the optimal policy for the given RL environm
 Thexzvcik7iknjhjhjhbhjbm
 2)Repeat for each episode:<br>jjkkl
      a)Initialize the starting stmnmate.<br>>FKnaLKFNalkfb;LANCVZLgwargaw
-     b)Repeat for each step of episode:<brkjkhkjhkhiunbjbndsfDfmb.KUGUIOYBU;UIHU
-      ->Choose action from state using policy derivecffvVd ffwfwrom Q (e.g., epsilon-greedy).<br>jkyfkuvxvvs
-      ->Take action, observe reward and next state.<br>
-d      ->Update Q(s, a) := Q(s, a) + alpha * [R + gamma * Q(s', a') - Q(s, a)]<br>.JB kkkk
-      ->Update the state and action.<br>
-    c)Until state is terminal.<br>.hkvkj. k.bhvb
+     b)Repeat for
 3)Until performance converges.<br>
 ADVADVADV
 
