@@ -8,9 +8,9 @@ Thexzvcik7iknjhjhjhbhjbm
      a)Initialize the starting stmnmate.<br>>FKnaLKFNalkfb;LANCVZLgwargaw
      b)Repeat for
 3)Until performance converges.<br>
-ADVADVADV
 
-## SARSA LEARNING FUNCTION
+
+## SARSA LEARNING FUNCTIONfSV
 ```python
 def sarsa(env,
           gamma=1.0,
