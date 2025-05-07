@@ -12,7 +12,7 @@ Thexzvcik7iknjhjhjhbhjbm
 hyrhye5
 ## SARSA LEARNING FUNCTIONfSV
 ```pythonxx
-def sarsa(env,
+def sarsa(env,ss
           gamma=1.0,
           init_alpha=0.5,
           min_alpha=0.01,
