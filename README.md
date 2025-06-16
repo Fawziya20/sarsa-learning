@@ -2,12 +2,6 @@
 
 
 To develop a Python program to find the optimal policy for the given RL environment using SARSA-Learning and compare the 
-## PROBLEM STATEMENT
-Thexzvcik7iknjhjhjhbhjbm
-2)Repeat for each episode:<br>jjkkl
-     a)Initialize the starting stmnmate.<br>>
-     b)Repeat for
-3)Until performance converges.<br>
 
 
 ## SARSA LEARNING FUNCTION
