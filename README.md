@@ -6,7 +6,7 @@ To develop a Python program to find the optimal policy for the given RL environm
 
 ## SARSA LEARNING FUNCTION
 ```pythonxx
-def sarsa(env,ss
+def sarsa(env,ssssa
           gamma=1.0,
           init_alpha=0.5,
           min_alpha=0.01,
