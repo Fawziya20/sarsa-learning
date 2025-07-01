@@ -14,7 +14,7 @@ def sarsa(env,ssssann
           init_epsilon=1.0,
           min_epsilon=0.1,
           epsilon_decay_ratio=0.9,
-          n_episodes=3000):
+          n_episodes=3000):ss
     nS, nA = env.observation_space.n, env.action_space.n
     pi_track = []
     Q = np.zeros((nS, nA), dtype=np.float64)
